@@ -1,0 +1,192 @@
+/// Generated - Do Not Edit
+namespace Examples
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text.Json.Serialization;
+    using System.Threading.Tasks;
+    using EventHorizon.Blazor.Interop;
+    using EventHorizon.Blazor.Interop.Callbacks;
+    using Microsoft.JSInterop;
+
+    
+    
+    [JsonConverter(typeof(CachedEntityConverter<ExampleClass>))]
+    public class ExampleClass : CachedEntityObject
+    {
+        #region Static Accessors
+
+        #endregion
+
+        #region Static Properties
+
+        #endregion
+
+        #region Static Methods
+
+        #endregion
+
+        #region Accessors
+        private Vector3 __ref;
+        public Vector3 @ref
+        {
+            get
+            {
+            if(__ref == null)
+            {
+                __ref = EventHorizonBlazorInterop.GetClass<Vector3>(
+                    this.___guid,
+                    "ref",
+                    (entity) =>
+                    {
+                        return new Vector3() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __ref;
+            }
+        }
+
+        private Vector3 __lock;
+        public Vector3 @lock
+        {
+            get
+            {
+            if(__lock == null)
+            {
+                __lock = EventHorizonBlazorInterop.GetClass<Vector3>(
+                    this.___guid,
+                    "lock",
+                    (entity) =>
+                    {
+                        return new Vector3() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __lock;
+            }
+        }
+
+        private Vector3 __unlock;
+        public Vector3 @unlock
+        {
+            get
+            {
+            if(__unlock == null)
+            {
+                __unlock = EventHorizonBlazorInterop.GetClass<Vector3>(
+                    this.___guid,
+                    "unlock",
+                    (entity) =>
+                    {
+                        return new Vector3() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __unlock;
+            }
+        }
+
+        private Vector3 __object;
+        public Vector3 @object
+        {
+            get
+            {
+            if(__object == null)
+            {
+                __object = EventHorizonBlazorInterop.GetClass<Vector3>(
+                    this.___guid,
+                    "object",
+                    (entity) =>
+                    {
+                        return new Vector3() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __object;
+            }
+        }
+
+        private Vector3 __event;
+        public Vector3 @event
+        {
+            get
+            {
+            if(__event == null)
+            {
+                __event = EventHorizonBlazorInterop.GetClass<Vector3>(
+                    this.___guid,
+                    "event",
+                    (entity) =>
+                    {
+                        return new Vector3() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __event;
+            }
+        }
+
+        private Vector3 __bool;
+        public Vector3 @bool
+        {
+            get
+            {
+            if(__bool == null)
+            {
+                __bool = EventHorizonBlazorInterop.GetClass<Vector3>(
+                    this.___guid,
+                    "bool",
+                    (entity) =>
+                    {
+                        return new Vector3() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __bool;
+            }
+        }
+
+        private Vector3 __virtual;
+        public Vector3 @virtual
+        {
+            get
+            {
+            if(__virtual == null)
+            {
+                __virtual = EventHorizonBlazorInterop.GetClass<Vector3>(
+                    this.___guid,
+                    "virtual",
+                    (entity) =>
+                    {
+                        return new Vector3() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __virtual;
+            }
+        }
+        #endregion
+
+        #region Properties
+
+        #endregion
+        
+        #region Constructor
+        public ExampleClass() : base() { } 
+
+        public ExampleClass(
+            ICachedEntity entity
+        ) : base(entity)
+        {
+            ___guid = entity.___guid;
+        }
+
+
+        #endregion
+
+        #region Methods
+
+        #endregion
+    }
+}

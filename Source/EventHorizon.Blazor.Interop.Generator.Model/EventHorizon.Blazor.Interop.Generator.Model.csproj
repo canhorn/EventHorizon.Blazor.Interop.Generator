@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFramework>net5.0</TargetFramework>
+
+      <AssemblyTitle>EventHorizon.Blazor.Interop.Generator.Model</AssemblyTitle>
+      <AssemblyName>EventHorizon.Blazor.Interop.Generator.Model</AssemblyName>
+      <PackageId>EventHorizon.Blazor.Interop.Generator.Model</PackageId>
+
+      <Description>Model's for the EventHorizon.Blazor.Interop.Generator that can be used to create writers.</Description>
+      <PackageTags>Blazor, WASM, Interop, Model</PackageTags>
+  </PropertyGroup>
+
+</Project>

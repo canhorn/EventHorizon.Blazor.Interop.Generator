@@ -1,0 +1,108 @@
+/// Generated - Do Not Edit
+namespace Static.Primitive
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text.Json.Serialization;
+    using System.Threading.Tasks;
+    using EventHorizon.Blazor.Interop;
+    using EventHorizon.Blazor.Interop.Callbacks;
+    using Microsoft.JSInterop;
+
+    
+    
+    [JsonConverter(typeof(CachedEntityConverter<ExampleClass<CachedEntity>>))]
+    public class ExampleClass<T> : CachedEntityObject where T : CachedEntity, new()
+    {
+        #region Static Accessors
+
+        #endregion
+
+        #region Static Properties
+
+        #endregion
+
+        #region Static Methods
+
+        #endregion
+
+        #region Accessors
+        
+        public Observer<T>[] observers
+        {
+            get
+            {
+            return EventHorizonBlazorInterop.GetArrayClass<Observer<T>>(
+                    this.___guid,
+                    "observers",
+                    (entity) =>
+                    {
+                        return new Observer<T>() { ___guid = entity.___guid };
+                    }
+                );
+            }
+        }
+
+        private Observer<T> __observer;
+        public Observer<T> observer
+        {
+            get
+            {
+            if(__observer == null)
+            {
+                __observer = EventHorizonBlazorInterop.GetClass<Observer<T>>(
+                    this.___guid,
+                    "observer",
+                    (entity) =>
+                    {
+                        return new Observer<T>() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __observer;
+            }
+        }
+
+        private BehaviorCachedEntity<T> __getBehaviorByName;
+        public BehaviorCachedEntity<T> getBehaviorByName
+        {
+            get
+            {
+            if(__getBehaviorByName == null)
+            {
+                __getBehaviorByName = EventHorizonBlazorInterop.GetClass<BehaviorCachedEntity<T>>(
+                    this.___guid,
+                    "getBehaviorByName",
+                    (entity) =>
+                    {
+                        return new BehaviorCachedEntity<T>() { ___guid = entity.___guid };
+                    }
+                );
+            }
+            return __getBehaviorByName;
+            }
+        }
+        #endregion
+
+        #region Properties
+
+        #endregion
+        
+        #region Constructor
+        public ExampleClass() : base() { } 
+
+        public ExampleClass(
+            ICachedEntity entity
+        ) : base(entity)
+        {
+            ___guid = entity.___guid;
+        }
+
+
+        #endregion
+
+        #region Methods
+
+        #endregion
+    }
+}

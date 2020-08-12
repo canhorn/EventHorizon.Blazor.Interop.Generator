@@ -1,0 +1,182 @@
+/// Generated - Do Not Edit
+namespace Static.Primitive
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text.Json.Serialization;
+    using System.Threading.Tasks;
+    using EventHorizon.Blazor.Interop;
+    using EventHorizon.Blazor.Interop.Callbacks;
+    using Microsoft.JSInterop;
+
+    
+    
+    [JsonConverter(typeof(CachedEntityConverter<ExampleClass>))]
+    public class ExampleClass : CachedEntityObject
+    {
+        #region Static Accessors
+
+        #endregion
+
+        #region Static Properties
+
+        #endregion
+
+        #region Static Methods
+
+        #endregion
+
+        #region Accessors
+
+        #endregion
+
+        #region Properties
+
+        #endregion
+        
+        #region Constructor
+        public ExampleClass() : base() { } 
+
+        public ExampleClass(
+            ICachedEntity entity
+        ) : base(entity)
+        {
+            ___guid = entity.___guid;
+        }
+
+
+        #endregion
+
+        #region Methods
+        public string[] arrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<string>(
+                new object[]
+                {
+                    new string[] { this.___guid, "arrayExample" }
+                }
+            );
+        }
+
+        public string[] arrayLikeExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<string>(
+                new object[]
+                {
+                    new string[] { this.___guid, "arrayLikeExample" }
+                }
+            );
+        }
+
+        public decimal[] floatArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "floatArrayExample" }
+                }
+            );
+        }
+
+        public decimal[] float32ArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "float32ArrayExample" }
+                }
+            );
+        }
+
+        public decimal[] indicesArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "indicesArrayExample" }
+                }
+            );
+        }
+
+        public decimal[] uint8ArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "uint8ArrayExample" }
+                }
+            );
+        }
+
+        public string[] nullableArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<string>(
+                new object[]
+                {
+                    new string[] { this.___guid, "nullableArrayExample" }
+                }
+            );
+        }
+
+        public string[] nullableArrayLikeExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<string>(
+                new object[]
+                {
+                    new string[] { this.___guid, "nullableArrayLikeExample" }
+                }
+            );
+        }
+
+        public decimal[] nullableFloatArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "nullableFloatArrayExample" }
+                }
+            );
+        }
+
+        public decimal[] nullableFloat32ArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "nullableFloat32ArrayExample" }
+                }
+            );
+        }
+
+        public decimal[] nullableIndicesArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "nullableIndicesArrayExample" }
+                }
+            );
+        }
+
+        public decimal[] nullableUint8ArrayExample()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "nullableUint8ArrayExample" }
+                }
+            );
+        }
+
+        public decimal[] nullableDeepImmutableArray()
+        {
+            return EventHorizonBlazorInterop.FuncArray<decimal>(
+                new object[]
+                {
+                    new string[] { this.___guid, "nullableDeepImmutableArray" }
+                }
+            );
+        }
+        #endregion
+    }
+}

@@ -1,0 +1,157 @@
+/// Generated - Do Not Edit
+namespace Static.Primitive
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text.Json.Serialization;
+    using System.Threading.Tasks;
+    using EventHorizon.Blazor.Interop;
+    using EventHorizon.Blazor.Interop.Callbacks;
+    using Microsoft.JSInterop;
+
+    
+    
+    [JsonConverter(typeof(CachedEntityConverter<ExampleClass>))]
+    public class ExampleClass : CachedEntityObject
+    {
+        #region Static Accessors
+
+        #endregion
+
+        #region Static Properties
+
+        #endregion
+
+        #region Static Methods
+
+        #endregion
+
+        #region Accessors
+
+        #endregion
+
+        #region Properties
+        
+        public string stringType
+        {
+            get
+            {
+            return EventHorizonBlazorInterop.Get<string>(
+                    this.___guid,
+                    "stringType"
+                );
+            }
+            set
+            {
+
+                EventHorizonBlazorInterop.Set(
+                    this.___guid,
+                    "stringType",
+                    value
+                );
+            }
+        }
+
+        
+        public bool booleanType
+        {
+            get
+            {
+            return EventHorizonBlazorInterop.Get<bool>(
+                    this.___guid,
+                    "booleanType"
+                );
+            }
+            set
+            {
+
+                EventHorizonBlazorInterop.Set(
+                    this.___guid,
+                    "booleanType",
+                    value
+                );
+            }
+        }
+
+        
+        public CachedEntity htmlElementType
+        {
+            get
+            {
+            return EventHorizonBlazorInterop.Get<CachedEntity>(
+                    this.___guid,
+                    "htmlElementType"
+                );
+            }
+            set
+            {
+
+                EventHorizonBlazorInterop.Set(
+                    this.___guid,
+                    "htmlElementType",
+                    value
+                );
+            }
+        }
+
+        
+        public int intType
+        {
+            get
+            {
+            return EventHorizonBlazorInterop.Get<int>(
+                    this.___guid,
+                    "intType"
+                );
+            }
+            set
+            {
+
+                EventHorizonBlazorInterop.Set(
+                    this.___guid,
+                    "intType",
+                    value
+                );
+            }
+        }
+
+        
+        public CachedEntity partialObject
+        {
+            get
+            {
+            return EventHorizonBlazorInterop.Get<CachedEntity>(
+                    this.___guid,
+                    "partialObject"
+                );
+            }
+            set
+            {
+
+                EventHorizonBlazorInterop.Set(
+                    this.___guid,
+                    "partialObject",
+                    value
+                );
+            }
+        }
+        #endregion
+        
+        #region Constructor
+        public ExampleClass() : base() { } 
+
+        public ExampleClass(
+            ICachedEntity entity
+        ) : base(entity)
+        {
+            ___guid = entity.___guid;
+        }
+
+
+        #endregion
+
+        #region Methods
+
+        #endregion
+    }
+}

@@ -1,0 +1,94 @@
+/// Generated - Do Not Edit
+namespace Static.Class
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text.Json.Serialization;
+    using System.Threading.Tasks;
+    using EventHorizon.Blazor.Interop;
+    using EventHorizon.Blazor.Interop.Callbacks;
+    using Microsoft.JSInterop;
+
+    
+    
+    [JsonConverter(typeof(CachedEntityConverter<ExampleClass>))]
+    public class ExampleClass : CachedEntityObject
+    {
+        #region Static Accessors
+
+        #endregion
+
+        #region Static Properties
+
+        #endregion
+
+        #region Static Methods
+        public static GroundMesh CreateGroundFromHeightMap(string name, string url, object options, Scene scene = null)
+        {
+            return EventHorizonBlazorInterop.FuncClass<GroundMesh>(
+                entity => new GroundMesh() { ___guid = entity.___guid },
+                new object[] 
+                {
+                    new string[] { "Static", "Class", "ExampleClass", "CreateGroundFromHeightMap" }, name, url, options, scene
+                }
+            );
+        }
+
+        public static void ObjectLiteralAsSecondArgument(string options)
+        {
+            EventHorizonBlazorInterop.Func<CachedEntity>(
+                new object[] 
+                {
+                    new string[] { "Static", "Class", "ExampleClass", "ObjectLiteralAsSecondArgument" }, options
+                }
+            );
+        }
+
+        public static void ObjectLiteral(object options)
+        {
+            EventHorizonBlazorInterop.Func<CachedEntity>(
+                new object[] 
+                {
+                    new string[] { "Static", "Class", "ExampleClass", "ObjectLiteral" }, options
+                }
+            );
+        }
+
+        public static Vector3 ObjectLiteralFirst(AbstractMesh[] meshesOrMinMaxVector)
+        {
+            return EventHorizonBlazorInterop.FuncClass<Vector3>(
+                entity => new Vector3() { ___guid = entity.___guid },
+                new object[] 
+                {
+                    new string[] { "Static", "Class", "ExampleClass", "ObjectLiteralFirst" }, meshesOrMinMaxVector
+                }
+            );
+        }
+        #endregion
+
+        #region Accessors
+
+        #endregion
+
+        #region Properties
+
+        #endregion
+        
+        #region Constructor
+        public ExampleClass() : base() { } 
+
+        public ExampleClass(
+            ICachedEntity entity
+        ) : base(entity)
+        {
+            ___guid = entity.___guid;
+        }
+
+
+        #endregion
+
+        #region Methods
+
+        #endregion
+    }
+}

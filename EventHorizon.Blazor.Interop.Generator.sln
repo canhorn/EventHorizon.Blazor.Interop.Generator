@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF084C56-BA91-4932-BFAA-0EEF00FF85CD}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		.github\workflows\dotnet-core.yml = .github\workflows\dotnet-core.yml
+		.github\workflows\dotnet-package.yml = .github\workflows\dotnet-package.yml
+		.github\workflows\main-tag-bump.yml = .github\workflows\main-tag-bump.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{932AD335-24DD-419D-9F45-93720F37D7DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHorizon.Blazor.Interop.Generator.Tests", "Tests\EventHorizon.Blazor.Interop.Generator.Tests\EventHorizon.Blazor.Interop.Generator.Tests.csproj", "{CAEED771-5D2A-48F8-9DF5-8E60FA569FA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHorizon.Blazor.Interop.Generator", "Source\EventHorizon.Blazor.Interop.Generator\EventHorizon.Blazor.Interop.Generator.csproj", "{CB890B5E-A7F7-4742-B3F5-71E0668B6960}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHorizon.Blazor.Interop.Generator.Writers.Project", "Source\EventHorizon.Blazor.Interop.Generator.Writers.Project\EventHorizon.Blazor.Interop.Generator.Writers.Project.csproj", "{2D1BE986-B7C9-457F-8F09-E7D71EEA0D8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Writers", "Writers", "{66BA240A-9512-4874-A05A-FE86C72DAA5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tool", "Tool", "{C261DE2D-65FB-4616-B02A-5A7461C6D767}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHorizon.BabylonJS.Interop.Generator.ConsoleApp", "Sample\EventHorizon.Blazor.Interop.Generator.ConsoleApp\EventHorizon.BabylonJS.Interop.Generator.ConsoleApp.csproj", "{D9476412-802F-4E4D-A9C1-BC9329321097}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHorizon.Blazor.Interop.Tool", "Tool\EventHorizon.Blazor.Interop.Tool\EventHorizon.Blazor.Interop.Tool.csproj", "{F0460464-3A7F-4CDB-AE07-50AE4AF538EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAEED771-5D2A-48F8-9DF5-8E60FA569FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEED771-5D2A-48F8-9DF5-8E60FA569FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEED771-5D2A-48F8-9DF5-8E60FA569FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEED771-5D2A-48F8-9DF5-8E60FA569FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB890B5E-A7F7-4742-B3F5-71E0668B6960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB890B5E-A7F7-4742-B3F5-71E0668B6960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB890B5E-A7F7-4742-B3F5-71E0668B6960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB890B5E-A7F7-4742-B3F5-71E0668B6960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1BE986-B7C9-457F-8F09-E7D71EEA0D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1BE986-B7C9-457F-8F09-E7D71EEA0D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1BE986-B7C9-457F-8F09-E7D71EEA0D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1BE986-B7C9-457F-8F09-E7D71EEA0D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9476412-802F-4E4D-A9C1-BC9329321097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9476412-802F-4E4D-A9C1-BC9329321097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9476412-802F-4E4D-A9C1-BC9329321097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9476412-802F-4E4D-A9C1-BC9329321097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0460464-3A7F-4CDB-AE07-50AE4AF538EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0460464-3A7F-4CDB-AE07-50AE4AF538EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0460464-3A7F-4CDB-AE07-50AE4AF538EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0460464-3A7F-4CDB-AE07-50AE4AF538EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CAEED771-5D2A-48F8-9DF5-8E60FA569FA0} = {932AD335-24DD-419D-9F45-93720F37D7DE}
+		{2D1BE986-B7C9-457F-8F09-E7D71EEA0D8F} = {66BA240A-9512-4874-A05A-FE86C72DAA5B}
+		{F0460464-3A7F-4CDB-AE07-50AE4AF538EE} = {C261DE2D-65FB-4616-B02A-5A7461C6D767}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB1241E0-8802-4F96-9FD7-B938FE890192}
+	EndGlobalSection
+EndGlobal
