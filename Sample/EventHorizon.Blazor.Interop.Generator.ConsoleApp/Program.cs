@@ -59,6 +59,7 @@ namespace EventHorizon.Blazor.Interop.Generator.ConsoleApp
                 "PointerInfo",
                 "PointerInfoBase",
                 "SceneLoader",
+                "FollowCamera",
             };
 
             // Remove any already Generated Source.
